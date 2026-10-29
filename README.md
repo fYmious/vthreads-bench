@@ -46,13 +46,3 @@ java -jar app-webflux/target/app-webflux-1.0.0.jar
 ```
 k6 run -e VUS=500 -e DURATION=60s -e MS=100 -e CALLS=1 load/work.js
 ```
-
-## Что нужно зафиксировать в методике
-
-- версия JDK и Spring Boot, параметры JVM (куча, GC), железо;
-- размер пула платформенных потоков (`server.tomcat.threads.max`), несколько значений;
-- размер пула соединений WebClient (`bench.pool-size`);
-- у JDK `HttpClient` в app-mvc лимита соединений нет, у WebClient он задан: сравнить условия;
-- k6 в режиме constant-vus это закрытая модель нагрузки; для сравнения задержек при перегрузке
-  рассмотреть открытую модель (executor `constant-arrival-rate`);
-- прогрев JVM перед замерами, несколько повторов, backend и клиент на отдельных ядрах.
