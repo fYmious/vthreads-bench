@@ -1,0 +1,21 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.0)
+
+2026-10-25T14:41:27.767+03:00  INFO 64283 --- [           main] bench.webflux.WebfluxApplication         : Starting WebfluxApplication v1.0.0 using Java 25.0.5.0.2 with PID 64283 (/home/fymio/vthreads-bench/app-webflux/target/app-webflux-1.0.0.jar started by fymio in /home/fymio/vthreads-bench)
+2026-10-25T14:41:27.769+03:00  INFO 64283 --- [           main] bench.webflux.WebfluxApplication         : No active profile set, falling back to 1 default profile: "default"
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (jar:nested:/home/fymio/vthreads-bench/app-webflux/target/app-webflux-1.0.0.jar/!BOOT-INF/lib/netty-common-4.1.121.Final.jar!/)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-10-25T14:41:29.235+03:00  INFO 64283 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2026-10-25T14:41:29.243+03:00  INFO 64283 --- [           main] bench.webflux.WebfluxApplication         : Started WebfluxApplication in 1.95 seconds (process running for 2.374)
+2026-10-25T14:44:22.580+03:00  INFO 64283 --- [ionShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-25T14:44:22.582+03:00  INFO 64283 --- [ netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete

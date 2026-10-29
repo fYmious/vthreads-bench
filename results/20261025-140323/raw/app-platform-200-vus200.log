@@ -1,0 +1,24 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.0)
+
+2026-10-25T14:03:27.346+03:00  INFO 45289 --- [           main] bench.mvc.MvcApplication                 : Starting MvcApplication v1.0.0 using Java 25.0.5.0.2 with PID 45289 (/home/fymio/vthreads-bench/app-mvc/target/app-mvc-1.0.0.jar started by fymio in /home/fymio/vthreads-bench)
+2026-10-25T14:03:27.349+03:00  INFO 45289 --- [           main] bench.mvc.MvcApplication                 : The following 1 profile is active: "platform"
+2026-10-25T14:03:28.372+03:00  INFO 45289 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-10-25T14:03:28.386+03:00  INFO 45289 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-25T14:03:28.387+03:00  INFO 45289 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-10-25T14:03:28.411+03:00  INFO 45289 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-25T14:03:28.412+03:00  INFO 45289 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1010 ms
+2026-10-25T14:03:28.999+03:00  INFO 45289 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-10-25T14:03:29.013+03:00  INFO 45289 --- [           main] bench.mvc.MvcApplication                 : Started MvcApplication in 2.167 seconds (process running for 2.596)
+2026-10-25T14:03:29.065+03:00  INFO 45289 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-25T14:03:29.065+03:00  INFO 45289 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-25T14:03:29.066+03:00  INFO 45289 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-25T14:04:00.374+03:00  INFO 45289 --- [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-25T14:04:00.379+03:00  INFO 45289 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

@@ -1,0 +1,76 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: load/work.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1000 max VUs, 40s max duration (incl. graceful stop):
+              * load: 1000 looping VUs for 10s (gracefulStop: 30s)
+
+
+running (00.9s), 1000/1000 VUs, 413 complete and 0 interrupted iterations
+load   [   9% ] 1000 VUs  00.9s/10s
+
+running (01.9s), 1000/1000 VUs, 3396 complete and 0 interrupted iterations
+load   [  19% ] 1000 VUs  01.9s/10s
+
+running (02.9s), 1000/1000 VUs, 6818 complete and 0 interrupted iterations
+load   [  29% ] 1000 VUs  02.9s/10s
+
+running (03.9s), 1000/1000 VUs, 11709 complete and 0 interrupted iterations
+load   [  39% ] 1000 VUs  03.9s/10s
+
+running (04.9s), 1000/1000 VUs, 17678 complete and 0 interrupted iterations
+load   [  49% ] 1000 VUs  04.9s/10s
+
+running (05.9s), 1000/1000 VUs, 24253 complete and 0 interrupted iterations
+load   [  59% ] 1000 VUs  05.9s/10s
+
+running (06.9s), 1000/1000 VUs, 31363 complete and 0 interrupted iterations
+load   [  69% ] 1000 VUs  06.9s/10s
+
+running (07.9s), 1000/1000 VUs, 38531 complete and 0 interrupted iterations
+load   [  79% ] 1000 VUs  07.9s/10s
+
+running (08.9s), 1000/1000 VUs, 46051 complete and 0 interrupted iterations
+load   [  89% ] 1000 VUs  08.9s/10s
+
+running (09.9s), 1000/1000 VUs, 54391 complete and 0 interrupted iterations
+load   [  99% ] 1000 VUs  09.9s/10s
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 56153   5558.540614/s
+    checks_succeeded...: 100.00% 56153 out of 56153
+    checks_failed......: 0.00%   0 out of 56153
+
+    ✓ status 200
+
+    HTTP
+    http_req_duration..............: avg=177.9ms med=141.95ms p(90)=241.84ms p(95)=329.99ms p(99)=930.18ms max=1.71s
+      { expected_response:true }...: avg=177.9ms med=141.95ms p(90)=241.84ms p(95)=329.99ms p(99)=930.18ms max=1.71s
+    http_req_failed................: 0.00%  0 out of 56153
+    http_reqs......................: 56153  5558.540614/s
+
+    EXECUTION
+    iteration_duration.............: avg=178.7ms med=142.52ms p(90)=242.04ms p(95)=330.16ms p(99)=950.66ms max=1.75s
+    iterations.....................: 56153  5558.540614/s
+    vus............................: 1000   min=1000       max=1000
+    vus_max........................: 1000   min=1000       max=1000
+
+    NETWORK
+    data_received..................: 8.5 MB 839 kB/s
+    data_sent......................: 5.0 MB 495 kB/s
+
+
+
+
+running (10.1s), 0000/1000 VUs, 56153 complete and 0 interrupted iterations
+load ✓ [ 100% ] 1000 VUs  10s

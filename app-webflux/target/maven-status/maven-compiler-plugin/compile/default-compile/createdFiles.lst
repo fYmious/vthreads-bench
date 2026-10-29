@@ -1,0 +1,5 @@
+bench/webflux/WebClientConfig.class
+bench/webflux/WorkController.class
+bench/webflux/WebfluxApplication.class
+bench/webflux/BackendReply.class
+bench/webflux/WorkController$Result.class

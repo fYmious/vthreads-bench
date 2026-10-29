@@ -1,0 +1,106 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: load/work.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 200 max VUs, 50s max duration (incl. graceful stop):
+              * load: 200 looping VUs for 20s (gracefulStop: 30s)
+
+
+running (01.0s), 200/200 VUs, 781 complete and 0 interrupted iterations
+load   [   5% ] 200 VUs  01.0s/20s
+
+running (02.0s), 200/200 VUs, 2486 complete and 0 interrupted iterations
+load   [  10% ] 200 VUs  02.0s/20s
+
+running (03.0s), 200/200 VUs, 4363 complete and 0 interrupted iterations
+load   [  15% ] 200 VUs  03.0s/20s
+
+running (04.0s), 200/200 VUs, 6200 complete and 0 interrupted iterations
+load   [  20% ] 200 VUs  04.0s/20s
+
+running (05.0s), 200/200 VUs, 8161 complete and 0 interrupted iterations
+load   [  25% ] 200 VUs  05.0s/20s
+
+running (06.0s), 200/200 VUs, 10131 complete and 0 interrupted iterations
+load   [  30% ] 200 VUs  06.0s/20s
+
+running (07.0s), 200/200 VUs, 12072 complete and 0 interrupted iterations
+load   [  35% ] 200 VUs  07.0s/20s
+
+running (08.0s), 200/200 VUs, 13981 complete and 0 interrupted iterations
+load   [  40% ] 200 VUs  08.0s/20s
+
+running (09.0s), 200/200 VUs, 15981 complete and 0 interrupted iterations
+load   [  45% ] 200 VUs  09.0s/20s
+
+running (10.0s), 200/200 VUs, 17975 complete and 0 interrupted iterations
+load   [  50% ] 200 VUs  10.0s/20s
+
+running (11.0s), 200/200 VUs, 19940 complete and 0 interrupted iterations
+load   [  55% ] 200 VUs  11.0s/20s
+
+running (12.0s), 200/200 VUs, 21838 complete and 0 interrupted iterations
+load   [  60% ] 200 VUs  12.0s/20s
+
+running (13.0s), 200/200 VUs, 23781 complete and 0 interrupted iterations
+load   [  65% ] 200 VUs  13.0s/20s
+
+running (14.0s), 200/200 VUs, 25781 complete and 0 interrupted iterations
+load   [  70% ] 200 VUs  14.0s/20s
+
+running (15.0s), 200/200 VUs, 27781 complete and 0 interrupted iterations
+load   [  75% ] 200 VUs  15.0s/20s
+
+running (16.0s), 200/200 VUs, 29710 complete and 0 interrupted iterations
+load   [  80% ] 200 VUs  16.0s/20s
+
+running (17.0s), 200/200 VUs, 31638 complete and 0 interrupted iterations
+load   [  85% ] 200 VUs  17.0s/20s
+
+running (18.0s), 200/200 VUs, 33588 complete and 0 interrupted iterations
+load   [  90% ] 200 VUs  18.0s/20s
+
+running (19.0s), 200/200 VUs, 35581 complete and 0 interrupted iterations
+load   [  95% ] 200 VUs  19.0s/20s
+
+running (20.0s), 200/200 VUs, 37581 complete and 0 interrupted iterations
+load   [ 100% ] 200 VUs  20.0s/20s
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 37781   1882.009389/s
+    checks_succeeded...: 100.00% 37781 out of 37781
+    checks_failed......: 0.00%   0 out of 37781
+
+    ✓ status 200
+
+    HTTP
+    http_req_duration..............: avg=105.93ms med=101.9ms  p(90)=107.56ms p(95)=115.97ms p(99)=139.55ms max=564.65ms
+      { expected_response:true }...: avg=105.93ms med=101.9ms  p(90)=107.56ms p(95)=115.97ms p(99)=139.55ms max=564.65ms
+    http_req_failed................: 0.00%  0 out of 37781
+    http_reqs......................: 37781  1882.009389/s
+
+    EXECUTION
+    iteration_duration.............: avg=106.11ms med=102.03ms p(90)=107.77ms p(95)=116.22ms p(99)=139.67ms max=573.84ms
+    iterations.....................: 37781  1882.009389/s
+    vus............................: 200    min=200        max=200
+    vus_max........................: 200    min=200        max=200
+
+    NETWORK
+    data_received..................: 5.7 MB 284 kB/s
+    data_sent......................: 3.4 MB 168 kB/s
+
+
+
+
+running (20.1s), 000/200 VUs, 37781 complete and 0 interrupted iterations
+load ✓ [ 100% ] 200 VUs  20s

@@ -1,0 +1,112 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: load/work.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1000 max VUs, 50s max duration (incl. graceful stop):
+              * load: 1000 looping VUs for 20s (gracefulStop: 30s)
+
+
+running (00.9s), 1000/1000 VUs, 196 complete and 0 interrupted iterations
+load   [   5% ] 1000 VUs  00.9s/20s
+
+running (01.9s), 1000/1000 VUs, 1757 complete and 0 interrupted iterations
+load   [  10% ] 1000 VUs  01.9s/20s
+
+running (02.9s), 1000/1000 VUs, 3486 complete and 0 interrupted iterations
+load   [  15% ] 1000 VUs  02.9s/20s
+
+running (03.9s), 1000/1000 VUs, 5273 complete and 0 interrupted iterations
+load   [  20% ] 1000 VUs  03.9s/20s
+
+running (04.9s), 1000/1000 VUs, 7126 complete and 0 interrupted iterations
+load   [  25% ] 1000 VUs  04.9s/20s
+
+running (05.9s), 1000/1000 VUs, 8942 complete and 0 interrupted iterations
+load   [  30% ] 1000 VUs  05.9s/20s
+
+running (06.9s), 1000/1000 VUs, 10774 complete and 0 interrupted iterations
+load   [  35% ] 1000 VUs  06.9s/20s
+
+running (07.9s), 1000/1000 VUs, 12725 complete and 0 interrupted iterations
+load   [  40% ] 1000 VUs  07.9s/20s
+
+running (08.9s), 1000/1000 VUs, 14699 complete and 0 interrupted iterations
+load   [  45% ] 1000 VUs  08.9s/20s
+
+running (09.9s), 1000/1000 VUs, 16665 complete and 0 interrupted iterations
+load   [  50% ] 1000 VUs  09.9s/20s
+
+running (10.9s), 1000/1000 VUs, 18616 complete and 0 interrupted iterations
+load   [  55% ] 1000 VUs  10.9s/20s
+
+running (11.9s), 1000/1000 VUs, 20605 complete and 0 interrupted iterations
+load   [  60% ] 1000 VUs  11.9s/20s
+
+running (12.9s), 1000/1000 VUs, 22584 complete and 0 interrupted iterations
+load   [  65% ] 1000 VUs  12.9s/20s
+
+running (13.9s), 1000/1000 VUs, 24470 complete and 0 interrupted iterations
+load   [  70% ] 1000 VUs  13.9s/20s
+
+running (14.1s), 1000/1000 VUs, 24814 complete and 0 interrupted iterations
+load   [  70% ] 1000 VUs  14.1s/20s
+
+running (14.1s), 1000/1000 VUs, 24814 complete and 0 interrupted iterations
+load   [  70% ] 1000 VUs  14.1s/20s
+
+running (14.9s), 1000/1000 VUs, 26420 complete and 0 interrupted iterations
+load   [  75% ] 1000 VUs  14.9s/20s
+
+running (15.9s), 1000/1000 VUs, 28414 complete and 0 interrupted iterations
+load   [  80% ] 1000 VUs  15.9s/20s
+
+running (16.9s), 1000/1000 VUs, 30414 complete and 0 interrupted iterations
+load   [  85% ] 1000 VUs  16.9s/20s
+
+running (17.9s), 1000/1000 VUs, 32414 complete and 0 interrupted iterations
+load   [  90% ] 1000 VUs  17.9s/20s
+
+running (18.9s), 1000/1000 VUs, 34405 complete and 0 interrupted iterations
+load   [  95% ] 1000 VUs  18.9s/20s
+
+running (19.9s), 1000/1000 VUs, 36405 complete and 0 interrupted iterations
+load   [ 100% ] 1000 VUs  19.9s/20s
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 37516   1829.492435/s
+    checks_succeeded...: 100.00% 37516 out of 37516
+    checks_failed......: 0.00%   0 out of 37516
+
+    ✓ status 200
+
+    HTTP
+    http_req_duration..............: avg=537.78ms med=508.69ms p(90)=578.2ms  p(95)=638.93ms p(99)=1.11s max=1.39s
+      { expected_response:true }...: avg=537.78ms med=508.69ms p(90)=578.2ms  p(95)=638.93ms p(99)=1.11s max=1.39s
+    http_req_failed................: 0.00%  0 out of 37516
+    http_reqs......................: 37516  1829.492435/s
+
+    EXECUTION
+    iteration_duration.............: avg=538.81ms med=508.84ms p(90)=578.53ms p(95)=639.16ms p(99)=1.15s max=1.44s
+    iterations.....................: 37516  1829.492435/s
+    vus............................: 1000   min=1000       max=1000
+    vus_max........................: 1000   min=1000       max=1000
+
+    NETWORK
+    data_received..................: 5.7 MB 276 kB/s
+    data_sent......................: 3.3 MB 163 kB/s
+
+
+
+
+running (20.5s), 0000/1000 VUs, 37516 complete and 0 interrupted iterations
+load ✓ [ 100% ] 1000 VUs  20s
