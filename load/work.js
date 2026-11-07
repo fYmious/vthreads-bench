@@ -1,4 +1,4 @@
-// Нагрузочный тест k6. Запуск:
+// Нагрузочный тест k6, закрытая модель. Запуск (обычно через run_bench.sh):
 //   k6 run -e VUS=500 -e DURATION=60s -e MS=100 -e CALLS=1 load/work.js
 import http from 'k6/http';
 import { check } from 'k6';
